@@ -1,0 +1,624 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #151931;
+}
+
+/* container */
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* header and navigasi menu */
+.header {
+    width: 100%;
+    padding: 13px;
+    background-color: #252841;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 25px;
+    color: #E7D1BB;
+}
+
+.navigasi ul li {
+    display: inline-block;
+    margin: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.navigasi ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #E7D1BB;
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #463e4b;
+}
+
+.navigasi a:hover {
+    color: #ffffef;
+    background-color: #A096A2;
+    transition: 0.6s;
+}
+
+/* container hero */
+.conhero {
+    width: 100%;
+    height: 618px;
+    box-sizing: border-box;
+}
+
+/* hero teks dan img */
+.hero {
+    width: 700px;
+    padding: 70px;
+    margin-top: 200px;
+    margin-left: 130px;
+    margin-bottom: 95px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #c49216;
+    margin-bottom: -2px;
+}
+
+.hero h3 {
+    font-size: 26px;
+    color: #A096A5;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #A096A5;
+    text-align: justify;
+}
+
+.hero button {
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 9px;
+    background-color: #F2C335;
+    color: #151931;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ffffef;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-hero {
+    width: 500px;
+    padding: 30px;
+    margin-top: -540px;
+    margin-right: 45px;
+    float: right;
+    box-sizing: border-box;
+    clear: both;
+}
+
+
+.img-hero img {
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+/* conten */
+.conten {
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+}
+
+/* about */
+.about {
+    width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+}
+
+.about img {
+    position: relative;
+    width: 325px;
+    height: 420px;
+    left: 200px;
+    margin-top: 120px;
+    border-radius: 25px;
+}
+
+.about h1 {
+    width: 720px;
+    float: right;
+    color: #f5f5f5;
+    margin-top: 120px;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    position: relative;
+}
+
+.about h1::after {
+    /* garis bawah dari about me h1 */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 20%;
+    height: 3px;
+    background-color: #F2C335;
+    border-radius: 10px;
+}
+
+.about p {
+    width: 500px;
+    float: right;
+    padding: 30px;
+    margin-right: 15%;
+    margin-top: -400px;
+    margin-bottom: -100px;
+    text-align: justify;
+    color: #f1f1f1;
+}
+
+.about .about-contak {
+    margin-top: -250px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #f1f1f1;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* services */
+.services {
+    width: 100%;
+    height: 620px;
+    padding: 30px;
+    border: 1px solid;
+    border: none;
+    background-color: #b3b3b3;
+    box-sizing: border-box;
+}
+
+.services h1 {
+    text-align: center;
+    color: #252841;
+    background: linear-gradient(to right, #252841, #FF6EA1) no-repeat bottom center;
+    background-size: 20% 5px;
+    padding-bottom: 5px;
+    margin-top: 90px;
+}
+
+.services .box {
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* card skil 1 */
+.box .skil1 {
+    width: 240px;
+    height: 270px;
+    margin: 20px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    border-width: 0 0 10px 0;
+    border-style: solid;
+    border-color: #F18F01;
+}
+
+/* conten skil 1 */
+.skil1 img {
+    margin-top: 50px;
+    margin-left: 35%;
+}
+
+.skil1 h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skil1 a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #232121;
+}
+
+/* card skil 2 */
+.box .skil2 {
+    width: 240px;
+    height: 270px;
+    margin: 20px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    border-width: 0 0 10px 0;
+    border-style: solid;
+    border-color: #019b98;
+}
+
+/* conten skil 2 */
+.skil2 img {
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.skil2 h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skil2 a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #232121;
+}
+
+/* card skil 3 */
+.box .skil3 {
+    width: 240px;
+    height: 270px;
+    margin: 20px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    border-width: 0 0 10px 0;
+    border-style: solid;
+    border-color: #00619a;
+}
+
+/* conten skil 3 */
+.skil3 img {
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.skil3 h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skil3 a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #232121;
+}
+
+/* card skil 4 */
+.box .skil4 {
+    width: 240px;
+    height: 270px;
+    margin: 20px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    border-width: 0 0 10px 0;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+/* conten skil 4 */
+.skil4 img {
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.skil4 h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skil4 a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #232121;
+}
+
+/* basic */
+.basic {
+    width: 100%;
+    height: 560px;
+    padding: 70px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid;
+    border: none;
+    display: flex;
+    position: relative;
+}
+
+/* bulat start  */
+.bulat-star {
+    border: 1px solid;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* img bulat star  */
+.bulat-star img {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* garis 1 */
+.garis1 {
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 5px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* bulat 1 */
+.bulat1 {
+    border: 1px solid;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* img bulat 1 html */
+.bulat1 img {
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+/* garis 2 */
+.garis2 {
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 5px;
+    margin-top: 100px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* bulat 2 */
+.bulat2 {
+    border: 1px solid;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* img bulat 2 css */
+.bulat2 img {
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+/* garis 3 */
+.garis3 {
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 5px;
+    margin-top: 100px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* bulat 3 */
+.bulat3 {
+    border: 1px solid;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* img bulat 3 js */
+.bulat3 img {
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+/* garis-finis */
+.garis-finis {
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 5px;
+    margin-top: 100px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* bulat finis */
+.bulat-finis {
+    border: 1px solid;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    background-color: #7FFF00;
+}
+
+/* img bulat finis */
+.bulat-finis img {
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+/* basic informasi */
+.basic-info {
+    display: initial;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid;
+    border: none;
+    border-radius: 15px;
+    border-width: 10px 0 0 0;
+    border-style: solid;
+    border-color: #FF3D3D;
+    background-color: #e5e5e5;
+    width: 630px;
+    height: 210px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.basic-info h2 {
+    text-align: center;
+    color: #151931;
+    margin-top: 5px;
+}
+
+.basic-info p {
+    text-align: justify;
+    font-style: italic;
+    font-weight: 500;
+    color: #3d3f5b;
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.basic-info span {
+    font-weight: bold;
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-right: 10px;
+    margin-top: -270px;
+}
+
+.contact img {
+    margin-top: 60px;
+    margin-left: -300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 160px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f5f5f5;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesan {
+    width: 500px;
+    padding: 13px 20px;
+    margin-left: 60px;
+    background-color: #de283b;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    color: #463e4b;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+footer img{
+    margin-left: 15px;
+}
